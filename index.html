@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+    <header>
+        <title>Meu Contador</title>
+        <style>
+            * {
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                min-height: 70vh;
+                background: black;
+                color: white;
+                display: grid;
+                place-items: center;
+            }
+
+            section {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 20px;
+                border-radius: 5px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 100px;
+            }
+        </style>
+    </header>
+
+    <body>        
+        <section>
+            <h1>Contador</h1>            
+            <p id="resultado">0</p>
+            <button onclick="diminuir()">menos</button>
+            <button onclick="aumentar()">mais</button>
+         </section>        
+
+         <script>
+
+            let numero = 0
+
+            function aumentar() {
+                numero++
+                mostrarNaTela()
+            }
+
+            function diminuir() {
+                numero--
+                mostrarNaTela()
+            }
+
+            function mostrarNaTela() {
+                const p = document.querySelector("#resultado")
+                p.innerText = numero
+            }
+
+            mostrarNaTela()
+         </script>
+        
+            <span style="font-size:10px">By PauloRoberto</span>
+
+
+    </body>
+
+</html>
