@@ -6,12 +6,12 @@
 }
 
 body {
-    display: grid;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 70vh;
     background: black;
-    color: white;    
 }
 
 section {
@@ -19,34 +19,64 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 2px solid;
+    border: 2px solid white;
     border-radius: 10px;
-    height: 12rem;
-    width: 12rem;
+    height: 15rem;
+    width: 15rem;
     background: linear-gradient(45deg, #2193b0, #6dd5ed);
     color: white;
     position: relative;
 }
 
-section button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 2px solid;
-    border-radius: 10px;
-    height: 12rem;
-    width: 12rem;
-    background: linear-gradient(45deg, #2193b0, #6dd5ed);
-    color: white;
-    position: relative;
+.btn {
+    border-radius: 50%;
+    font-size: 15px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: white;
+    border: 1px solid gainsboro;
+    box-shadow: 0 5px 26px -8px black;
+    cursor: pointer; 
 }
 
-p { font-size: 100px; }
+.increment {
+    bottom: 20px;
+    right: -14px;
+}
+
+.decrement {
+    right: 20px;
+    bottom: -10px;
+}
 
 span { 
     color: white;  
     margin: 0 auto; 
+}
 
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+}
+
+.footer .center{
+    padding: 5px;
+    font-size: 15px;
+    background: #151515;
+    text-align: center;
+}
+.footer .center span{
+    color: #656565;
+}
+.footer a{
+    color: #f12020;
+    text-decoration: none;
+}
+
+p {
+    font-size: 70px;
 }
 

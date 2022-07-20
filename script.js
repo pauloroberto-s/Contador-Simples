@@ -1,18 +1,18 @@
-let numero = 0
+let counter = 0
 
-            function aumentar() {
-                numero++
-                mostrarNaTela()
-            }
+function handleIncrement() {
+    counter++
+    renderScreen()
+}
 
-            function diminuir() {
-                numero--
-                mostrarNaTela()
-            }
+function handleDecrement() {
+    counter--
+    renderScreen()
+}
 
-            function mostrarNaTela() {
-                const p = document.querySelector("#resultado")
-                p.innerText = numero
-            }
+function renderScreen() {
+    const result = document.querySelector("#resultado")
+    result.innerText = counter
+}
 
-            mostrarNaTela()
+renderScreen()
